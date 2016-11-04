@@ -10,6 +10,3 @@ ls *.ipynb | entr jupyter nbconvert \
   &
 # Start the notebook
 jupyter notebook --NotebookApp.allow_origin='*' --no-browser --port 8888 --ip=*
-  &
-# start the file editor / for now as a simplehttpserver
-pushd ./editor; python -m SimpleHTTPServer 8001; popd

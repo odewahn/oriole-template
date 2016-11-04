@@ -28,12 +28,11 @@ ADD nginx.conf /etc/nginx/
 ADD run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 
-# File Editor
-RUN git clone https://github.com/oreillymedia/satturn.git ./editor
+# The Satturn File Editor
 EXPOSE 8001
-
-RUN chmod +x /usr/local/bin/run.sh
+RUN git clone https://github.com/oreillymedia/satturn.git /usr/satturn-editor
+ENV ROOT=/usr/workdir APPROOT=/usr/satturn-editor PORT=8001
 
 #USER jovyan
 
-CMD ["/usr/local/bin/run.sh"]
+CMD ["/usr/satturn-editor/api/api", "/usr/local/bin/run.sh"]
