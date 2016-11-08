@@ -30,9 +30,9 @@ RUN chmod +x /usr/local/bin/run.sh
 
 # The Satturn File Editor
 EXPOSE 8001
-RUN git clone https://github.com/oreillymedia/satturn.git /usr/satturn-editor
-ENV ROOT=/usr/workdir APPROOT=/usr/satturn-editor PORT=8001
+RUN git clone https://github.com/oreillymedia/satturn.git /usr/satturn-editor/
+RUN chmod +x /usr/satturn-editor/api/api-linux
 
 #USER jovyan
 
-CMD ["/usr/satturn-editor/api/api", "/usr/local/bin/run.sh"]
+CMD ["/usr/local/bin/run.sh"]
