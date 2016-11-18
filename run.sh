@@ -11,4 +11,4 @@ ls *.ipynb | entr jupyter nbconvert \
 # Start the notebook
 jupyter notebook --NotebookApp.allow_origin='*' --no-browser --port 8888 --ip=*
 
-& ROOT=./test-data/files/ PORT=8001 APPROOT=./ bash -c '/usr/satturn-editor/api/api-linux'
+& ROOT=/usr/workdir/ PORT=8001 APPROOT=/usr/satturn-editor/ bash -c '/usr/satturn-editor/api/api-linux'
