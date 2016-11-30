@@ -8,5 +8,8 @@ ls *.ipynb | entr jupyter nbconvert \
   --template ./setup/parse-html.tpl \
   main.ipynb \
   &
-# Start the notebook
-jupyter notebook --NotebookApp.allow_origin='*' --no-browser --port 8888 --ip=*
+  ROOT=/usr/workdir/ PORT=8001 APPROOT=/usr/satturn-editor/ bash -c '/usr/satturn-editor/api/api-linux'
+  & 
+  # Start the notebook
+  jupyter notebook --NotebookApp.allow_origin='*' --no-browser --port 8888 --ip=*
+
