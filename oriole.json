@@ -5,24 +5,23 @@
   "htmlContent": "main.html",
   "videoId": "TyimCGEkiUc",
   "cues": [
-  {
-    "time": [0,10],
-    "text": "Example 1",
-    "sel": "#example1",
-    "scroll": true
-  },
-  {
-    "time": [0,15],
-    "text": "Example 2",
-    "sel": "#example2",
-    "scroll": true
-  },
-  {
-    "time": [0,30],
-    "text": "A chart!",
-    "sel": "#example3",
-    "scroll": true
-  }
-]
-
+    {
+      "time": 73204,
+      "text": "Example 1",
+      "sel": "#example1",
+      "scroll": true
+    },
+    {
+      "time": 15000,
+      "text": "Example 2",
+      "sel": "#example2",
+      "scroll": true
+    },
+    {
+      "time": 30000,
+      "text": "A chart!",
+      "sel": "#example3",
+      "scroll": true
+    }
+  ]
 }

@@ -5,25 +5,26 @@
 A really simple example:
 
 <span id="example1"/>
-
+::: code python
 <pre data-code-language="python" data-executable="true" data-type="programlisting">
 hey = &#34;hello world&#34;, 38+4
 print(hey)
 </pre>
 
 
+::: #some-id
+:::
 
-
+So this is no
 
 ## More complicated example
 
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+::: code python executa
 x = [1,1]
 for i in range(10):    
     x.append(x[-1] + x[-2]) 
 print(&#39;, &#39;.join(str(y) for y in x))
-</pre>
-
+:::
 
 ## A Chart
 
