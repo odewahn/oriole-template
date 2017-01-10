@@ -6,7 +6,7 @@ LABEL workdir.launchbot.io="/usr/workdir"
 LABEL description.launchbot.io="Object-oriented Python."
 LABEL 8888.port.launchbot.io="Jupyter Notebook"
 LABEL 8000.port.launchbot.io="Oriole"
-LABEL 8001.port.launchbot.io="Satturn Editor"
+LABEL 8001.port.launchbot.io="Oriole Editor"
 
 # Set the working directory
 WORKDIR /usr/workdir
