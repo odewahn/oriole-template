@@ -5,21 +5,27 @@
 A really simple example:
 
 <span id="example1"/>
-::: code python
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+``` python
+
 hey = &#34;hello world&#34;, 38+4
 print(hey)
-</pre>
+print("I'm executable")
+```
 
+```
+
+print("I'm not executable")
+```
 
 ::: #some-id
+    I'm a block with the id #some-id
 :::
 
-So this is no
+
 
 ## More complicated example
 
-::: code python executa
+::: code python
 x = [1,1]
 for i in range(10):    
     x.append(x[-1] + x[-2]) 
@@ -28,22 +34,23 @@ print(&#39;, &#39;.join(str(y) for y in x))
 
 ## A Chart
 
-<span id="example3"/>
+<span id="example3"/> (this is also valid)
 
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+``` python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.linspace(0, 3*np.pi, 500)
 plt.plot(x, np.sin(x**2))
-plt.title(&#39;A simple chirp&#39;);
-</pre>
+plt.title("&#39;A simple chirp&#39;");
+```
+
 
 ## Seaborn Example
 
 <span id="example4"/>
 
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+``` python
 from __future__ import print_function, division
 
 %matplotlib inline
@@ -57,12 +64,12 @@ plt.plot(x, np.sin(x), x, np.cos(x));
 import seaborn as sns
 sns.set()
 plt.plot(x, np.sin(x), x, np.cos(x));
-</pre>
+```
 
 
 ## Interactive widgets
 
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+```
 %matplotlib inline
 from IPython.display import Image
 from IPython.html.widgets import interact
@@ -71,11 +78,11 @@ import numpy as np
 import pylab as plt
 import seaborn as sns
 sns.set()
-</pre>
+```
 
 And these too
 
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
+```
 def plot_fringe(bl_length, wavelength):
     &#34;&#34;&#34; Plot the fringe function for a baseline (see Fig 1)
 
@@ -95,4 +102,4 @@ def plot_fringe(bl_length, wavelength):
     plt.legend()
 
 f = interact(plot_fringe, bl_length=(1, 100), wavelength=(1, 100))
-</pre>
+```
