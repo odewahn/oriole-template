@@ -1,34 +1,39 @@
 <h1>A Simple Oriole</h1>
-<p>A really simple example:</p>
 <span id="example1"/>
-<p>::: code python
-hey = &quot;hello world&quot;, 38+4
+<p>A really simple example:</p>
+<pre data-code-language="python" data-executable="true" data-type="programlisting">hey = &amp;#34;hello world&amp;#34;, 38+4
 print(hey)
-:::</p>
-<div id="some-id">
+print(&quot;I'm executable&quot;)
+</pre>
+<pre data-code-language="" >print(&quot;I'm not executable&quot;)
+</pre>
+<p>This is some plain text.</p>
+<div id="an-id">
+<p>I'm a block with the id #an-id</p>
 </div>
-<p>So this is no</p>
+<div id="complicated-example">
 <h2>More complicated example</h2>
-<p>::: code python executa
-x = [1,1]
-for i in range(10):<br>
-x.append(x[-1] + x[-2])
-print(', '.join(str(y) for y in x))
-:::</p>
+</div>
+<pre data-code-language="python" data-executable="true" data-type="programlisting">x = [1,1]
+for i in range(10):    
+    x.append(x[-1] + x[-2]) 
+print(&amp;#39;, &amp;#39;.join(str(y) for y in x))
+</pre>
+<div id="a-chart">
 <h2>A Chart</h2>
-<span id="example3"/>
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
-%matplotlib inline
+</div>
+<p><span id="example3"/> (this is also valid)</p>
+<pre data-code-language="python" data-executable="true" data-type="programlisting">%matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.linspace(0, 3*np.pi, 500)
 plt.plot(x, np.sin(x**2))
-plt.title(&#39;A simple chirp&#39;);
+plt.title(&quot;&amp;#39;A simple chirp&amp;#39;&quot;);
 </pre>
+<div id="seaborn-example">
 <h2>Seaborn Example</h2>
-<span id="example4"/>
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
-from __future__ import print_function, division
+</div>
+<pre data-code-language="python" data-executable="true" data-type="programlisting">from __future__ import print_function, division
 
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -42,9 +47,10 @@ import seaborn as sns
 sns.set()
 plt.plot(x, np.sin(x), x, np.cos(x));
 </pre>
+<div id="interactive-widgets">
 <h2>Interactive widgets</h2>
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
-%matplotlib inline
+</div>
+<pre data-code-language="" >%matplotlib inline
 from IPython.display import Image
 from IPython.html.widgets import interact
 from numpy import pi, cos, sin
@@ -53,23 +59,24 @@ import pylab as plt
 import seaborn as sns
 sns.set()
 </pre>
+<div id="these-too">
 <p>And these too</p>
-<pre data-code-language="python" data-executable="true" data-type="programlisting">
-def plot_fringe(bl_length, wavelength):
-    &#34;&#34;&#34; Plot the fringe function for a baseline (see Fig 1)
+</div>
+<pre data-code-language="" >def plot_fringe(bl_length, wavelength):
+    &amp;#34;&amp;#34;&amp;#34; Plot the fringe function for a baseline (see Fig 1)
 
     bl_length:      distance between antennas, in m
     wavelength:     wavelength, in m
-    &#34;&#34;&#34;
+    &amp;#34;&amp;#34;&amp;#34;
     theta = np.linspace(-np.pi, np.pi, 401)
     l = sin(theta)
     F = cos(2 * pi * bl_length * l / wavelength)
     F2 = cos(2 * pi * 2 * bl_length * l / wavelength)
 
-    plt.plot(l, F, c=&#39;#cc0000&#39;, label=&#34;Baseline 1-2&#34;)
-    plt.plot(l, F2, c=&#39;#0000cc&#39;, label=&#34;Baseline 1-3&#34;)
-    plt.xlabel(&#34;$sin(\\theta)$&#34;)
-    plt.ylabel(&#34;Fringe amplitude&#34;)
+    plt.plot(l, F, c=&amp;#39;#cc0000&amp;#39;, label=&amp;#34;Baseline 1-2&amp;#34;)
+    plt.plot(l, F2, c=&amp;#39;#0000cc&amp;#39;, label=&amp;#34;Baseline 1-3&amp;#34;)
+    plt.xlabel(&amp;#34;$sin(\\theta)$&amp;#34;)
+    plt.ylabel(&amp;#34;Fringe amplitude&amp;#34;)
     plt.ylim(-2, 2)
     plt.legend()
 

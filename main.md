@@ -1,38 +1,41 @@
 
 
 # A Simple Oriole
+<span id="example1"/>
 
 A really simple example:
 
-<span id="example1"/>
 ``` python
-
 hey = &#34;hello world&#34;, 38+4
 print(hey)
 print("I'm executable")
 ```
 
-```
 
+```
 print("I'm not executable")
 ```
 
-::: #some-id
-    I'm a block with the id #some-id
+This is some plain text.
+
+::: #an-id
+I'm a block with the id #an-id
 :::
 
 
-
+::: #complicated-example
 ## More complicated example
+:::
 
-::: code python
+``` python
 x = [1,1]
 for i in range(10):    
     x.append(x[-1] + x[-2]) 
 print(&#39;, &#39;.join(str(y) for y in x))
-:::
-
+```
+::: #a-chart
 ## A Chart
+::: 
 
 <span id="example3"/> (this is also valid)
 
@@ -45,10 +48,9 @@ plt.plot(x, np.sin(x**2))
 plt.title("&#39;A simple chirp&#39;");
 ```
 
-
+::: #seaborn-example
 ## Seaborn Example
-
-<span id="example4"/>
+:::
 
 ``` python
 from __future__ import print_function, division
@@ -66,8 +68,9 @@ sns.set()
 plt.plot(x, np.sin(x), x, np.cos(x));
 ```
 
-
+::: #interactive-widgets
 ## Interactive widgets
+:::
 
 ```
 %matplotlib inline
@@ -79,8 +82,9 @@ import pylab as plt
 import seaborn as sns
 sns.set()
 ```
-
+::: #these-too
 And these too
+:::
 
 ```
 def plot_fringe(bl_length, wavelength):

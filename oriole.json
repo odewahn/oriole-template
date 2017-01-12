@@ -6,22 +6,36 @@
   "videoId": "TyimCGEkiUc",
   "cues": [
     {
-      "time": 73204,
-      "text": "Example 1",
-      "sel": "#example1",
-      "scroll": true
+      "time": 12071,
+      "sel": "#example1"
     },
     {
-      "time": 15000,
-      "text": "Example 2",
-      "sel": "#example2",
-      "scroll": true
+      "time": 45266,
+      "sel": "#an-id"
     },
     {
-      "time": 30000,
-      "text": "A chart!",
-      "sel": "#example3",
-      "scroll": true
+      "time": 66311,
+      "sel": "#complicated-example"
+    },
+    {
+      "time": 78750,
+      "sel": "#a-chart"
+    },
+    {
+      "time": 79750,
+      "sel": "#example3"
+    },
+    {
+      "time": 83433,
+      "sel": "#seaborn-example"
+    },
+    {
+      "time": 114185,
+      "sel": "#interactive-widgets"
+    },
+    {
+      "time": 115318,
+      "sel": "#these-too"
     }
   ]
 }
